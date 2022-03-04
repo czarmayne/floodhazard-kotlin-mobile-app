@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/activity_edit_location"
+    tools:context=".DetailForecastActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Description Label --><![CDATA[
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        tools:targetApi="jelly_bean">
+
+        ]]>
+
+        <TextView
+            android:id="@+id/impact"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:hint="Type"
+            android:textSize="20sp"
+            tools:ignore="TextFields"
+            tools:targetApi="jelly_bean" />
+
+        <TextView
+            android:id="@+id/location_detail"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:hint="Location"
+            android:inputType="textMultiLine"
+            android:textSize="24sp"
+            tools:ignore="TextFields"
+            tools:targetApi="jelly_bean" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="365dp"
+        android:layout_height="75dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Time"
+        android:textSize="18sp"
+        tools:ignore="TextFields"
+        tools:targetApi="jelly_bean" />
+
+    <TextView
+        android:id="@+id/affected"
+        android:layout_width="365dp"
+        android:layout_height="123dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Flood Impact"
+        android:inputType="textMultiLine"
+        android:textSize="24sp"
+        tools:ignore="TextFields"
+        tools:targetApi="jelly_bean" />
+
+    <ImageView
+        android:id="@+id/imageViewDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rain" />
+
+</LinearLayout>

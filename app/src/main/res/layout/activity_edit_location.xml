@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/activity_edit_location"
+    tools:context=".EditLocationActivity">
+
+    <!-- Name Label -->
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        tools:targetApi="jelly_bean">
+
+    <TextView
+        android:id="@+id/edit_locName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Location Name"
+        android:textSize="24sp"
+        tools:targetApi="jelly_bean" />
+
+    <!-- Description Label -->
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        tools:targetApi="jelly_bean">
+
+    <TextView
+        android:id="@+id/edit_locDesc"
+        android:layout_width="365dp"
+        android:layout_height="49dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Location Description"
+        android:inputType="textMultiLine"
+        android:textSize="20sp"
+        tools:ignore="TextFields"
+        tools:targetApi="jelly_bean" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/swt_notify"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Notify"
+        android:textColor="@android:color/darker_gray"
+        android:textColorLink="?attr/actionModeSplitBackground"
+        android:textSize="24sp"
+        tools:targetApi="jelly_bean" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="12dp"
+        android:text="Save"
+        tools:targetApi="jelly_bean" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_delete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="12dp"
+        android:text="Delete"
+        tools:targetApi="jelly_bean" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_viewmap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="12dp"
+        android:text="View Map"
+        tools:targetApi="jelly_bean" />
+
+</LinearLayout>
